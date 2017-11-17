@@ -1,0 +1,5 @@
+Options -Indexes 
+
+RewriteEngine On
+
+RewriteRule ^.+\.(jpg|jpeg|gif|png|ico|css|js|swf|min) image.php?image=$0 [L]

